@@ -1,0 +1,60 @@
+/* Navigation */
+
+.nav-item {
+  text-decoration: none;
+  color: gray;
+  margin-right: 5px;
+}
+
+/* CityCard.jsx */
+
+.city-card {
+  width: 250px;
+  height: 300px;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.city-card:hover {
+  transform: scale(1.05);
+}
+
+.city-img {
+  height: 150px;
+}
+
+/* ItemCard.jsx */
+
+.item-card {
+  width: 350px;
+  height: 400px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.item-img {
+  height: 150px;
+}
+
+/* 카드 타이틀 폰트 */
+.card-title.h5 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+/* 카드 내용 폰트 */
+.card-text {
+  font-size: 13px;
+}
+
+/* List.jsx */
+
+.pagination {
+  display: flex;
+  justify-content: center;
+}
+
+/* 페이지네이션 숫자 */
+a.page-link {
+  color: black;
+}
