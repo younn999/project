@@ -15,7 +15,7 @@ const ItemCard = (props) => {
     <Container>
       <Row>
         {listItems &&
-          listItems.item.map((one) => (
+          listItems.item.map((one) => (  // .item은 여기서
             <Col>
               <Card className="item-card">
                 <Card.Img

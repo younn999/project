@@ -14,13 +14,19 @@ const List = () => {
   // 목록 데이터, 전체 데이터 수, 한번에 받아오는 데이터 수
   const [page, setPage] = useState(1);
 
+  // 지역코드가 바뀔 때만 호출
+  useEffect(() => {
+    dispatch(action.getFirst(id));
+    setPage(1); // 현재 페이지는 1로 셋팅
+  }, [id]);
+
+  // 지역코드와 페이지가 바뀔 때 호출
   useEffect(() => {
     dispatch(action.getList(id, page));
-  }, [id, page]); // id, page값이 바뀔 때마다 호출
+  }, [id, page]);
 
-  // 페이지 숫자를 바꿔주는 함수
+  // 페이지 숫자가 바뀌면 호출되는 함수
   const handlePageClick = ({ selected }) => {
-    // console.log("ppp", page);
     setPage(selected + 1);
   };
 
@@ -48,7 +54,7 @@ const List = () => {
             containerClassName="pagination"
             activeClassName="active"
             renderOnZeroPageCount={null}
-            forcePage={page - 1}
+            forcePage={page - 1} // 현재 페이지
           />
         )}
       </div>

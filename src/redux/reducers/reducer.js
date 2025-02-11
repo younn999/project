@@ -2,7 +2,7 @@ let initialState = {
   allData: {},
 };
 
-// 불러온 데이터를 변경함
+// 불러온 데이터로 변경함
 function reducer(state = initialState, action) {
   // console.log("aaa", action);
   switch (action.type) {

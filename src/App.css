@@ -1,11 +1,3 @@
-/* Navigation */
-
-.nav-item {
-  text-decoration: none;
-  color: gray;
-  margin-right: 5px;
-}
-
 /* CityCard.jsx */
 
 .city-card {
@@ -45,6 +37,14 @@
 /* 카드 내용 폰트 */
 .card-text {
   font-size: 13px;
+}
+
+/* Navigation.jsx */
+
+.nav-item {
+  text-decoration: none;
+  color: gray;
+  margin-right: 5px;
 }
 
 /* List.jsx */
